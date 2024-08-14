@@ -6,11 +6,21 @@ interface Teacher {
   location: string;
   [property: string]: string | number | boolean;
 }
-const teacher3: Teacher = {
+
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+const director1: Directors = {
   firstName: 'John',
-  fullTimeEmployee: false,
   lastName: 'Doe',
   location: 'London',
-  contract: false,
+  fullTimeEmployee: true,
+  numberOfReports: 17,
 };
-console.log(teacher3);
+console.log(director1);
+
+function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName[0]}. ${lastName}`;
+}
+console.log(printTeacher("John", "Doe"));
