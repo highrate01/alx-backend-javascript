@@ -21,7 +21,7 @@ const student2: Student = {
 
 const studentsList: Student[] = [ student1, student2 ];
 
-function renderTable() {
+function renderTable(): void {
 
   const table = document.createElement('table');
 
@@ -40,3 +40,4 @@ function renderTable() {
   });
   document.body.appendChild(table);
 }
+renderTable();
