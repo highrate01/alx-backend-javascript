@@ -40,10 +40,13 @@ class StudentClass implements Class {
     this.firstName = params.firstName;
     this.lastName = params.lastName;
   }
-  workOnHomework() {
+  workOnHomework(): string {
     return "Currently working";
   }
-  displayName() {
+  displayName(): string {
     return this.firstName;
   }
 }
+const student = new StudentClass({ firstName: "John", lastName: "Doe" });
+console.log(student.workOnHomework());
+console.log(student.displayName());
