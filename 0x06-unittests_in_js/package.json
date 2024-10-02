@@ -1,0 +1,12 @@
+{
+  "name": "mocha-test-project",
+  "version": "1.0.0",
+  "description": "A project to demonstrate Mocha testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "^10.7.3"
+  }
+}
