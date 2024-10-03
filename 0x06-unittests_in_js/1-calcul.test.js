@@ -20,7 +20,7 @@ describe('calculateNumber', () => {
 
   describe('DIVIDE', () => {
     it('should return the quotient of rounded numbers', () => {
-      assert.strictEqual(calculateNumber('DIVIDE', 1.4, 4.5), 0.25);
+      assert.strictEqual(calculateNumber('DIVIDE', 1.4, 4.5), 0.2);
       assert.strictEqual(calculateNumber('DIVIDE', 4.5, 1.4), 5);
       assert.strictEqual(calculateNumber('DIVIDE', 1.5, 3.7), 0.5);
     });
