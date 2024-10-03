@@ -1,0 +1,18 @@
+{
+  "name": "mocha-test-project",
+  "version": "1.0.0",
+  "description": "A project to demonstrate Mocha testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "mocha": "^10.7.3",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "sinon": "^19.0.2"
+  }
+}
